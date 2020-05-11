@@ -7,7 +7,7 @@ public class _00_ArrayCheatSheet {
 	static int g;
 	public static void main(String[] args) {
 		//1. make an array of 5 Strings
-		String [] girlfriends = {"Rosy", "Katherine McNarma", "Anglina", "Carly", "Baby"};
+		String [] girlfriends = {"Angelina Jolie", "Katherine McNarma", "Julia Roberts", "Rosy", "Baby"};
 		//2. print the third element in the array
 		System.out.println(girlfriends[2]);
 		//3. set the third element to a different value
@@ -26,15 +26,23 @@ public class _00_ArrayCheatSheet {
 		for (int i = 0; i < x.length; i++)  {
 			x[i] = new Random().nextInt(1000);
 		}
-		for (int i = 0; i < x.length; i++) {
-			if (x[i]<=x[(i+1)]) {
+		f = x[0];
+		for (int i = 1; i < x.length; i++) {
+			if (f>=x[i]) {
 				f = x[i];
-			}
-			else {
-				f = x[i+1];
 			}
 		}
 		System.out.println(f);
+		for (int i = 0; i < x.length; i++) {
+			System.out.println(x[i]);
+		}
+		g = x[0];
+		for (int i = 1; i < x.length; i++) {
+			if (g<=x[i]) {
+				g = x[i];
+			}
+		}
+		System.out.println(g);
 		
 		
 		
